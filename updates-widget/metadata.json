@@ -1,0 +1,18 @@
+{
+  "KPackageStructure": "Plasma/Applet",
+  "KPlugin": {
+    "Id": "com.github.fullmetal.updates-widget",
+    "Name": "Package Updates",
+    "Description": "Shows pending system updates count",
+    "Icon": "system-software-update",
+    "Category": "System Monitor",
+    "Authors": [
+      {
+        "Name": "fullmetal",
+        "Email": "fullmetal@localhost"
+      }
+    ],
+    "Version": "1.0"
+  },
+  "X-Plasma-API-Minimum-Version": "6.0"
+}

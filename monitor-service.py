@@ -210,6 +210,20 @@ def _get_uptime_info():
     }
 
 
+def _get_updates_info():
+    try:
+        out = subprocess.check_output(
+            ["apt", "list", "--upgradable"],
+            timeout=30,
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+        count = len([l for l in out.strip().splitlines() if "/" in l])
+        return {"count": count, "text": str(count)}
+    except Exception:
+        return {"count": 0, "text": "0"}
+
+
 class MonitorService(dbus.service.Object):
     def __init__(self):
         bus = dbus.SessionBus()
@@ -257,6 +271,10 @@ class MonitorService(dbus.service.Object):
     @dbus.service.method(INTERFACE, out_signature="s")
     def GetUptimeInfo(self):
         return json.dumps(_get_uptime_info())
+
+    @dbus.service.method(INTERFACE, out_signature="s")
+    def GetUpdatesInfo(self):
+        return json.dumps(_get_updates_info())
 
     @dbus.service.method(INTERFACE, out_signature="s")
     def GetAll(self):
