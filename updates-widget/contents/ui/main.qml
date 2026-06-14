@@ -35,6 +35,8 @@ PlasmoidItem {
             font.pointSize: Kirigami.Theme.smallFont.pointSize
             font.bold: root.updateCount > 0
             color: root.updateCount > 0 ? "#f39c12" : Kirigami.Theme.textColor
+            style: Text.Outline
+            styleColor: "#222222"
         }
     }
 

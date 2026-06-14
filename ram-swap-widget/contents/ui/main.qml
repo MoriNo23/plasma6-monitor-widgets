@@ -50,6 +50,8 @@ PlasmoidItem {
                 font.family: "Monospace"
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 color: root.statusColor
+                style: Text.Outline
+                styleColor: "#222222"
             }
             Label {
                 visible: root.showSwap && root.swapTotalGb > 0
@@ -57,6 +59,8 @@ PlasmoidItem {
                 font.family: "Monospace"
                 font.pointSize: Kirigami.Theme.smallFont.pointSize * 0.85
                 color: root.swapPercent > 80 ? "#e74c3c" : root.swapPercent > 50 ? "#f39c12" : "#27ae60"
+                style: Text.Outline
+                styleColor: "#222222"
             }
         }
     }

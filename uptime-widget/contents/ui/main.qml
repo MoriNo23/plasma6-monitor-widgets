@@ -45,6 +45,8 @@ PlasmoidItem {
             font.family: "Monospace"
             font.pointSize: Kirigami.Theme.smallFont.pointSize
             color: root.statusColor
+            style: Text.Outline
+            styleColor: "#222222"
         }
     }
 
