@@ -1,0 +1,13 @@
+[Unit]
+Description=Monitor D-Bus service (RAM/CPU/Uptime widgets backend)
+After=plasma-desktop.target
+
+[Service]
+Type=dbus
+BusName=com.github.fullmetal.monitor
+ExecStart=/usr/bin/python3 /home/fullmetal/plasmoids-monitor/service/monitor-service.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=plasma-desktop.target

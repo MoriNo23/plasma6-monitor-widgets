@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+  <group name="General">
+    <entry name="pollInterval" type="Int">
+      <default>3</default>
+      <min>1</min>
+      <max>30</max>
+      <label>Polling interval in seconds</label>
+    </entry>
+    <entry name="showGraph" type="Bool">
+      <default>true</default>
+      <label>Show history graph in expanded view</label>
+    </entry>
+    <entry name="showTopProcesses" type="Bool">
+      <default>true</default>
+      <label>Show top processes in expanded view</label>
+    </entry>
+    <entry name="showPerCore" type="Bool">
+      <default>true</default>
+      <label>Show per-core breakdown in expanded view</label>
+    </entry>
+  </group>
+</kcfg>

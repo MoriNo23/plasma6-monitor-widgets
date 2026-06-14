@@ -1,0 +1,18 @@
+{
+  "KPackageStructure": "Plasma/Applet",
+  "KPlugin": {
+    "Id": "com.github.fullmetal.cpu-widget",
+    "Name": "CPU Monitor",
+    "Description": "CPU usage monitor with per-core breakdown and top processes",
+    "Icon": "cpu-symbolic",
+    "Category": "System Monitor",
+    "Authors": [
+      {
+        "Name": "fullmetal",
+        "Email": "fullmetal@localhost"
+      }
+    ],
+    "Version": "1.0"
+  },
+  "X-Plasma-API-Minimum-Version": "6.0"
+}

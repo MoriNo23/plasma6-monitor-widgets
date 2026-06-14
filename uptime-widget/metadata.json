@@ -1,0 +1,18 @@
+{
+  "KPackageStructure": "Plasma/Applet",
+  "KPlugin": {
+    "Id": "com.github.fullmetal.uptime-widget",
+    "Name": "Uptime & Reboot",
+    "Description": "System uptime monitor with reboot history and quick reboot button",
+    "Icon": "system-reboot-symbolic",
+    "Category": "System Monitor",
+    "Authors": [
+      {
+        "Name": "fullmetal",
+        "Email": "fullmetal@localhost"
+      }
+    ],
+    "Version": "1.0"
+  },
+  "X-Plasma-API-Minimum-Version": "6.0"
+}

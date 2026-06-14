@@ -1,0 +1,18 @@
+{
+  "KPackageStructure": "Plasma/Applet",
+  "KPlugin": {
+    "Id": "com.github.fullmetal.ram-swap-widget",
+    "Name": "RAM & Swap",
+    "Description": "Memory usage monitor with graphs and top processes",
+    "Icon": "memory-symbolic",
+    "Category": "System Monitor",
+    "Authors": [
+      {
+        "Name": "fullmetal",
+        "Email": "fullmetal@localhost"
+      }
+    ],
+    "Version": "1.0"
+  },
+  "X-Plasma-API-Minimum-Version": "6.0"
+}
